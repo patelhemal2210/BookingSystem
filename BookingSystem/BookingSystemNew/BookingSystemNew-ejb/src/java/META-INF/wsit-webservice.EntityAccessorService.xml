@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="EntityAccessorService" targetNamespace="http://webservice/" xmlns:tns="http://webservice/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:fi="http://java.sun.com/xml/ns/wsit/2006/09/policy/fastinfoset/service" xmlns:tcp="http://java.sun.com/xml/ns/wsit/2006/09/policy/soaptcp/service" 
+ >
+    <message name="find"/>
+    <message name="findResponse"/>
+    <message name="getAll"/>
+    <message name="getAllResponse"/>
+    <message name="insert"/>
+    <message name="insertResponse"/>
+    <message name="update"/>
+    <message name="updateResponse"/>
+    <message name="delete"/>
+    <message name="deleteResponse"/>
+    <message name="namedQuery"/>
+    <message name="namedQueryResponse"/>
+    <portType name="EntityAccessorService">
+        <operation name="find">
+            <input message="tns:find"/>
+            <output message="tns:findResponse"/>
+        </operation>
+        <operation name="getAll">
+            <input message="tns:getAll"/>
+            <output message="tns:getAllResponse"/>
+        </operation>
+        <operation name="insert">
+            <input message="tns:insert"/>
+            <output message="tns:insertResponse"/>
+        </operation>
+        <operation name="update">
+            <input message="tns:update"/>
+            <output message="tns:updateResponse"/>
+        </operation>
+        <operation name="delete">
+            <input message="tns:delete"/>
+            <output message="tns:deleteResponse"/>
+        </operation>
+        <operation name="namedQuery">
+            <input message="tns:namedQuery"/>
+            <output message="tns:namedQueryResponse"/>
+        </operation>
+    </portType>
+    <binding name="EntityAccessorServicePortBinding" type="tns:EntityAccessorService">
+        <wsp:PolicyReference URI="#EntityAccessorServicePortBindingPolicy"/>
+        <operation name="find">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getAll">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="insert">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="update">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="delete">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="namedQuery">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="EntityAccessorService">
+        <port name="EntityAccessorServicePort" binding="tns:EntityAccessorServicePortBinding"/>
+    </service>
+    <wsp:Policy wsu:Id="EntityAccessorServicePortBindingPolicy">
+        <wsp:ExactlyOne>
+            <wsp:All/>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+</definitions>

@@ -1,0 +1,17 @@
+h2.section-header {
+    margin-top: 150px;
+    font-size: 35px; 
+    color:#FFFFFF;
+}
+
+.section-header {
+  background: #FF5722;
+  float: left;
+  width: 100%;
+  color: #52565b;
+}
+
+div.table-section p {
+    font-size:25px;
+    color: #FFFFFF;
+}

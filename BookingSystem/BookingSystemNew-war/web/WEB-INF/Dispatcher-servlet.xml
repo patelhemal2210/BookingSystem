@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:mvc="http://www.springframework.org/schema/mvc"
+   xsi:schemaLocation="
+   http://www.springframework.org/schema/beans     
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd
+   http://www.springframework.org/schema/mvc
+   http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- allows the controller handler mappings to be written in annotation style (inside controller class rather than xml file) 
+    this is the accepted practice for Spring 4.0 -->
+   <context:component-scan base-package="controller" />
+   
+
+   <!-- view resolver - whatever logical view name is provided by controller will be appended with this file path and .jsp extension --> 
+   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+      <property name="prefix" value="/WEB-INF/jsp/" />
+      <property name="suffix" value=".jsp" />
+   </bean>
+   
+   <mvc:resources mapping="/resources/**" location="/resources/" />
+   <mvc:annotation-driven />
+ 
+</beans>

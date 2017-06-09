@@ -1,0 +1,87 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+/BookingSystem/BookingSystem-war/nbproject/private/
+/BookingSystem/BookingSystem-ejb/nbproject/private/
+/BookingSystem/nbproject/private/
+/BookingSystemAlternateConfig/nbproject/private/
+/BookingSystemRemote/build/
+/BookingSystemRemote/dist/
+/BookingSystemRemote/nbproject/private/
+/BookingSystemAlternateConfigRemote/build/
+/BookingSystemAlternateConfigRemote/dist/
+/BookingSystemAlternateConfigRemote/nbproject/private/
+/BookingSystemAlternateConfig/build
+/BookingSystemAlternateConfig/BookingSystemAlternateConfig-war/nbproject/private/
+/BookingSystemAlternateConfig/BookingSystemAlternateConfig-ejb/nbproject/private/
+/BookingSystemAlternateConfig/BookingSystemAlternateConfig-ejb/build/
+/BookingSystemAlternateConfig/BookingSystemAlternateConfig-ejb/dist/
+/BookingSystemAlternateConfig/BookingSystemAlternateConfig-war/dist/
+/BookingSystemAlternateConfig/BookingSystemAlternateConfig-war/build/
+/BookingSystemAlternateConfig/dist/
+/BookingSystemNew/nbproject/private/
+/BookingSystemNew/BookingSystemNew-war/nbproject/private/
+/BookingSystemNew/BookingSystemNew-ejb/nbproject/private/
+/BookingSystemNewRemote/nbproject/private/
+/EntityBeansLibrary/nbproject/private/
+/BookingSystemNewRemote/build/
+/EntityBeansLibrary/build/
+/EntityBeansLibrary/dist/
+/BookingSystemNewRemote/dist/
+/BookingSystemNew/BookingSystemNew-ejb/build/
+/BookingSystemNew/build/
+/BookingSystemNew/BookingSystemNew-ejb/dist/
+/BookingSystemNew/BookingSystemNew-war/build/
+/BookingSystemGuests/build/
+/BookingSystemGuests/dist/
+/BookingSystemGuests/nbproject/private/
+/testCLient/nbproject/private/
+/testCLient/build/
+/testCLient/dist/
+/BookingSystemNew-war/nbproject/private/
+/BookingSystemNew-war/build/
+/BookingSystemNew-war/dist/
